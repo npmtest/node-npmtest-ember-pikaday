@@ -1,1 +1,40 @@
-{     "devDependencies": {         "ember-pikaday": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-ember-pikaday",     "homepage": "https://github.com/npmtest/node-npmtest-ember-pikaday",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-ember-pikaday.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [ember-pikaday (v2.2.2)](https://github.com/edgycircle/ember-pikaday#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-pikaday.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-pikaday) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-pikaday.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-pikaday)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "ember-pikaday": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-ember-pikaday",
+    "keywords": [
+        "coverage",
+        "test",
+        "ember-pikaday"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_ember_pikaday.js",
+    "name": "npmtest-ember-pikaday",
+    "nameAlias": "npmtest_ember_pikaday",
+    "nameOriginal": "npmtest-ember-pikaday",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-ember-pikaday.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
