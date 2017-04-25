@@ -1,6 +1,6 @@
 # npmtest-ember-pikaday
 
-#### test coverage for  [ember-pikaday (v2.2.2)](https://github.com/edgycircle/ember-pikaday#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-pikaday.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-pikaday) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-pikaday.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-pikaday)
+#### basic test coverage for  [ember-pikaday (v2.2.2)](https://github.com/edgycircle/ember-pikaday#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-pikaday.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-pikaday) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-pikaday.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-pikaday)
 
 #### A tested datepicker component for Ember CLI projects including test helpers for your own acceptance tests.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-ember-pikaday/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-ember-pikaday/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ember-pikaday/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ember-pikaday/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-pikaday/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-pikaday/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-ember-pikaday/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-ember-pikaday/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-pikaday/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-pikaday/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-ember-pikaday/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ember-pikaday/build/coverage.html/index.html)
 
@@ -107,7 +107,8 @@
         "start": "ember server",
         "test": "ember try:each"
     },
-    "version": "2.2.2"
+    "version": "2.2.2",
+    "bin": {}
 }
 ```
 
